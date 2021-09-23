@@ -2,6 +2,7 @@
 
 # Quiz
 
+import time
 
 print("""Hello, Welcome to my quiz. 
 I will be asking you five questions 
@@ -11,7 +12,7 @@ and we'll see what your percentage is at the end!
 
 score = 0
 
-question = input("What is 121 + 190?\n")
+question = input("What is 121 + 190? \n")
 
 if question == "311":
     print("Bingo! You nailed that question!\n")
@@ -19,7 +20,9 @@ if question == "311":
 else:
     print("Wrong..........\n")
 
-question = input("What month does Christmas fall on?\n").lower().strip("!?. ")
+time.sleep(3)
+
+question = input("What month does Christmas fall on? \n").lower().strip("!?. ")
 
 if question == "december":
     print("You got it right!\n")
@@ -27,7 +30,9 @@ if question == "december":
 else:
     print("incorrect.............\n")
 
-question = input("What type of cell contains no membrane bound organelles?").lower().strip("!?. ")
+time.sleep(3)
+
+question = input("What type of cell contains no membrane bound organelles? ").lower().strip("!?. ")
 
 if question in ("prokaryotic cell", "prokaryotes", "prokaryotic cells", "prokaryote"):
     print("You got that one correct!\n")
@@ -40,7 +45,9 @@ elif question in ("eukaryotic cell", "eukaryotes", "eukaryotic cells", "eukaryot
 else:
     print("Wrong..........\n")
 
-question = input("how many net ATP does glycosis produce?").lower().strip("!?. ")
+time.sleep(3)
+
+question = input("how many net ATP does glycosis produce? ").lower().strip("!?. ")
 
 if question == "2" or question == "two":
     print("Nice job!\n")
@@ -50,15 +57,19 @@ elif question == "4" or question == "four":
 else:
     print("Invalid.............\n")
 
-question = input("Where does the Calvin Cycle occur in the chloroplast?").lower().strip("!?. ")
+time.sleep(3)
+
+question = input("Where does the Calvin Cycle occur in the chloroplast? ").lower().strip("!?. ")
 
 if question == "stroma":
-    print("Good Job\n")
+    print("Good Job.\n")
     score += 1
 elif question == "stomata":
     print("Incorrect. Stomata sounds kinda like stroma, but it is not.\n")
 else:
     print("Err!\n")
+
+time.sleep(3)
 
 question = input("""A portion of the Earth where living things exist is called:
 
@@ -69,16 +80,19 @@ C) Population
 Pick one of these letter: """).lower().strip("!?. ")
 
 if question == "a":
-    print("WOOHOO!! WOW YOU GOT THAT RIGHT!!!")
+    print("WOOHOO!! WOW YOU GOT THAT RIGHT!!!\n")
     score += 1
 elif question == "b":
-    print("Yea I thought that as well, but it's wrong. ERR.")
+    print("Yea I thought that as well, but it's wrong. ERR.\n")
 elif question == "c":
-    print("Im sorry, that choice is wrong.")
+    print("Im sorry, that choice is wrong.\n")
 else:
-    print("You did not pick one of this letters, so you got this question wrong")
+    print("You did not pick one of this letters, so you got this question wrong.\n")
+
+time.sleep(3)
 
 percentage = (score / 6) * 100
-print(f"You got {percentage}% right.")
-print("Thank you for particitpating in my quiz.")
+print(f"You got {round(percentage, 2)}% right.")
+print(f"{score}/6\n\n")
+print("Thank you for participating in my quiz.")
 
