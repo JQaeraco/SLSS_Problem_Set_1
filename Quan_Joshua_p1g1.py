@@ -1,1 +1,84 @@
 # Quiz Creation Activity
+
+# Quiz
+
+
+print("""Hello, Welcome to my quiz. 
+I will be asking you five questions 
+and we'll see what your percentage is at the end!
+
+""")
+
+score = 0
+
+question = input("What is 121 + 190?\n")
+
+if question == "311":
+    print("Bingo! You nailed that question!\n")
+    score += 1
+else:
+    print("Wrong..........\n")
+
+question = input("What month does Christmas fall on?\n").lower().strip("!?. ")
+
+if question == "december":
+    print("You got it right!\n")
+    score += 1
+else:
+    print("incorrect.............\n")
+
+question = input("What type of cell contains no membrane bound organelles?").lower().strip("!?. ")
+
+if question in ("prokaryotic cell", "prokaryotes", "prokaryotic cells", "prokaryote"):
+    print("You got that one correct!\n")
+    score += 1
+elif question in ("eukaryotic cell", "eukaryotes", "eukaryotic cells", "eukaryote"):
+    print("""Close, 
+    but eukaryotic cells are the type of cells that contain membrane bound organelles. 
+    Wrong.
+    """)
+else:
+    print("Wrong..........\n")
+
+question = input("how many net ATP does glycosis produce?").lower().strip("!?. ")
+
+if question == "2" or question == "two":
+    print("Nice job!\n")
+    score += 1
+elif question == "4" or question == "four":
+    print("Glycosis does produce 4 ATP but I was asking for the net amount.\nSorry, you are wrong.\n")
+else:
+    print("Invalid.............\n")
+
+question = input("Where does the Calvin Cycle occur in the chloroplast?").lower().strip("!?. ")
+
+if question == "stroma":
+    print("Good Job\n")
+    score += 1
+elif question == "stomata":
+    print("Incorrect. Stomata sounds kinda like stroma, but it is not.\n")
+else:
+    print("Err!\n")
+
+question = input("""A portion of the Earth where living things exist is called:
+
+A) Biosphere
+B) Ecosystem
+C) Population
+
+Pick one of these letter: """).lower().strip("!?. ")
+
+if question == "a":
+    print("WOOHOO!! WOW YOU GOT THAT RIGHT!!!")
+    score += 1
+elif question == "b":
+    print("Yea I thought that as well, but it's wrong. ERR.")
+elif question == "c":
+    print("Im sorry, that choice is wrong.")
+else:
+    print("You did not pick one of this letters, so you got this question wrong")
+
+percentage = (score / 6) * 100
+print(f"You got {percentage}% right.")
+print("Thank you for particitpating in my quiz.")
+
