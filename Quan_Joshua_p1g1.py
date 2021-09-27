@@ -1,9 +1,11 @@
 # Quiz Creation Activity
 
-# Quiz
+# Quiz will have ay least 5 questions
+# It will keep track or score and give a final result
 
 import time
 
+# Introduction
 print("""Hello, Welcome to my quiz. 
 I will be asking you five questions 
 and we'll see what your percentage is at the end!
