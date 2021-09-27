@@ -12,8 +12,10 @@ and we'll see what your percentage is at the end!
 
 """)
 
+# Set up the score counter
 score = 0
 
+# Create 6 questions and responses to user input
 question = input("What is 121 + 190? \n")
 
 if question == "311":
@@ -93,8 +95,9 @@ else:
 
 time.sleep(3)
 
+# Results and farewells
 percentage = (score / 6) * 100
 print(f"You got {round(percentage, 2)}% right.")
 print(f"{score}/6\n\n")
 print("Thank you for participating in my quiz.")
-
+print("Good Bye! :)")
