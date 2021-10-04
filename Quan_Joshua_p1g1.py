@@ -81,7 +81,7 @@ A) Biosphere
 B) Ecosystem
 C) Population
 
-Pick one of these letter: """).lower().strip("!?. ")
+Pick one of these letters: """).lower().strip("!?. ")
 
 if question == "a":
     print("WOOHOO!! WOW YOU GOT THAT RIGHT!!!\n")
