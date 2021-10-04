@@ -22,7 +22,7 @@ if question == "311":
     print("Bingo! You nailed that question!\n")
     score += 1
 else:
-    print("Wrong..........\n")
+    print("Wrong. It is 311.\n")
 
 time.sleep(3)
 
@@ -47,7 +47,7 @@ elif question in ("eukaryotic cell", "eukaryotes", "eukaryotic cells", "eukaryot
     Wrong.
     """)
 else:
-    print("Wrong..........\n")
+    print("Wrong. The answer is prokaryotic cells.\n")
 
 time.sleep(3)
 
@@ -59,7 +59,7 @@ if question == "2" or question == "two":
 elif question == "4" or question == "four":
     print("Glycosis does produce 4 ATP but I was asking for the net amount.\nSorry, you are wrong.\n")
 else:
-    print("Invalid.............\n")
+    print("Invalid. The answer is 2 ATP\n")
 
 time.sleep(3)
 
@@ -71,7 +71,7 @@ if question == "stroma":
 elif question == "stomata":
     print("Incorrect. Stomata sounds kinda like stroma, but it is not.\n")
 else:
-    print("Err!\n")
+    print("Err! The answer is stroma.\n")
 
 time.sleep(3)
 
