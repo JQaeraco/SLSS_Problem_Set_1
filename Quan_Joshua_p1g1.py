@@ -1,7 +1,7 @@
 # Quiz Creation Activity
 
-# Quiz will have ay least 5 questions
-# It will keep track or score and give a final result
+# Quiz will have ay least 5 questions and responses to those questions
+# It will keep track of score and give a final result
 
 import time
 
